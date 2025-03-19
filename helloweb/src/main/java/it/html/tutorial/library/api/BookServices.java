@@ -13,7 +13,7 @@ import java.net.URI;
 public class BookServices {
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	public List list() {
+	public List<Book> list() {
 		List books = new ArrayList();
 		Author author = new Author();
 		author.setId(1);
